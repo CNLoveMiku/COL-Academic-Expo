@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sleep Quality | COL Academic Expo</title>
+    <meta
+      name="description"
+      content="COL Academic Expo website for a quantitative research project on sleep quality, stress, depressive symptoms, and electronic device use among high school students."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M45 37.5A16 16 0 0 1 26.5 19 18 18 0 1 0 45 37.5Z' fill='%23fff'/%3E%3Ccircle cx='43' cy='20' r='4' fill='%23fbbf24'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Sleep Quality Expo home">
+        <span class="brand-mark"></span>
+        <span>Sleep Quality Research</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#question">Question</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#process">Process</a>
+        <a href="#booth">Booth</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/sleep-research-hero.svg" alt="" class="hero-image" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">COL Academic Expo · Quantitative Research</p>
+          <h1 id="hero-title">Sleep Quality and Student Performance</h1>
+          <p class="hero-copy">
+            A student-led investigation into how stress, depressive symptoms,
+            and electronic device use relate to sleep quality among high school
+            students.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#evidence">View the data</a>
+            <a class="button secondary" href="#booth">Explore the booth</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" id="question">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Research question</p>
+            <h2>How do stress, depressive symptoms, and electronic device use relate to sleep quality?</h2>
+          </div>
+          <div class="lead-panel">
+            <p>
+              The project began as a broad curiosity about sleep and school
+              performance, then became a more measurable quantitative study.
+              The strongest learning came from narrowing variables, handling
+              imperfect data, and understanding that real evidence rarely forms
+              a perfect pattern.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics-band" aria-label="Key findings">
+        <div class="metric">
+          <span class="metric-value" data-count="44">0</span>
+          <span class="metric-label">survey participants</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="89">0</span>
+          <span class="metric-label">% fell asleep between 1-2 a.m.</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="86">0</span>
+          <span class="metric-label">% used devices 1-2 hours before sleep</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="59">0</span>
+          <span class="metric-label">% named self-expectation as stress</span>
+        </div>
+      </section>
+
+      <section class="section" id="evidence">
+        <div class="section-heading">
+          <p class="section-kicker">Evidence</p>
+          <h2>The data points toward a late-night pressure cycle.</h2>
+          <p>
+            Most responses clustered around late sleep onset, social device
+            use, and self-imposed academic pressure. The study was descriptive,
+            so it does not prove causation, but it makes the pattern visible.
+          </p>
+        </div>
+
+        <div class="chart-grid">
+          <article class="chart-card">
+            <div class="chart-title">
+              <h3>Sleep Timing</h3>
+              <span>n = 44</span>
+            </div>
+            <canvas id="sleepChart" width="520" height="360" aria-label="Bar chart showing sleep timing distribution"></canvas>
+          </article>
+          <article class="chart-card">
+            <div class="chart-title">
+              <h3>Device Use Before Bed</h3>
+              <span>hours</span>
+            </div>
+            <canvas id="deviceChart" width="520" height="360" aria-label="Bar chart showing device use before sleep"></canvas>
+          </article>
+          <article class="chart-card wide-card">
+            <div class="chart-title">
+              <h3>Stress Sources</h3>
+              <span>primary source reported</span>
+            </div>
+            <canvas id="stressChart" width="900" height="340" aria-label="Horizontal bar chart showing stress sources"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="process">
+        <div class="section-heading">
+          <p class="section-kicker">Learning process</p>
+          <h2>What changed from idea to evidence</h2>
+        </div>
+        <div class="process-grid">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Refined the question</h3>
+            <p>
+              The team moved from “more sleep means better performance” toward
+              measurable factors: stress, PHQ-9 depressive symptoms, electronic
+              device habits, and sleep timing.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Standardized collection</h3>
+            <p>
+              A cluster sample from Meraki House was surveyed anonymously after
+              ethics, consent, and privacy considerations were planned.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Analyzed messy data</h3>
+            <p>
+              Scatter and distribution patterns were not perfect. That became a
+              research lesson: weak trends, outliers, and limitations still
+              matter when interpreted honestly.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">04</span>
+            <h3>Evaluated reliability</h3>
+            <p>
+              The group identified limits such as a small sample, descriptive
+              analysis only, and a need for broader demographic detail and more
+              standardized measurement tools.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section insight-section">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Two-minute takeaway</p>
+            <h2>Sleep quality is not just bedtime.</h2>
+          </div>
+          <div class="quote-block">
+            <p>
+              A student’s sleep is shaped by a system of habits and pressures:
+              device routines, self-expectations, academic stress, mood, and
+              consistency. Good research does not only chase a neat result; it
+              tests whether the evidence is strong enough to support the claim.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="booth">
+        <div class="section-heading">
+          <p class="section-kicker">Expo booth experience</p>
+          <h2>A visitor can understand the research in under two minutes.</h2>
+        </div>
+        <div class="booth-grid">
+          <article class="booth-card">
+            <h3>1. Quick prediction</h3>
+            <p>
+              Visitors choose which factor they think most strongly relates to
+              poor sleep: stress, depressive symptoms, or device use.
+            </p>
+          </article>
+          <article class="booth-card">
+            <h3>2. Reveal the evidence</h3>
+            <p>
+              The website shows the late-night pattern and stress distribution,
+              making the gap between expectation and evidence visible.
+            </p>
+          </article>
+          <article class="booth-card">
+            <h3>3. Reflect on method</h3>
+            <p>
+              Visitors compare “claim” versus “evidence” and identify why small
+              samples and descriptive results limit certainty.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section citations-section">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Sources</p>
+          <h2>Research base</h2>
+        </div>
+        <div class="citation-list">
+          <p>
+            Henrich, Liv C., et al. “Sleep Quality in Students: Associations
+            with Psychological and Lifestyle Factors.” <em>Current Psychology</em>,
+            vol. 42, 2023, pp. 4601-4608.
+          </p>
+          <p>
+            Spitzer, Robert L., Janet B. W. Williams, and Kurt Kroenke.
+            <em>Patient Health Questionnaire-9 (PHQ-9)</em>. American
+            Psychological Association.
+          </p>
+          <p>
+            Lemola, Sakari, et al. “Adolescents’ Electronic Media Use at Night,
+            Sleep Disturbance, and Depressive Symptoms in the Smartphone Age.”
+            <em>Journal of Youth and Adolescence</em>, vol. 44, no. 2, 2015.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Johnny Zhou · Bam Bam Sripratak · Charlene Chen · Maggie Zhang</span>
+      <span>COL Academic Expo</span>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
